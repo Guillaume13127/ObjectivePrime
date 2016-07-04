@@ -25,7 +25,8 @@ body, html {
 .content-section-c {
 	border-top: 1px solid #32465A;
 	border-bottom: 1px solid #32465A;
-	background-color: #34495e;
+	/*background-color: #34495e;*/
+	background-image: url("../img/intro/banner-bg.jpg");
 	padding: 90px 0;
 }
 
