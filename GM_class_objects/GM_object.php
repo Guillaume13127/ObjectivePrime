@@ -34,6 +34,40 @@
 		return $this->_db;
 	}
 	
+
+	    public static function getDatabase()
+	{
+		$c = get_called_class();
+        // extratction nom base selon les regles de nommages de la classe
+        // separateur _
+        // BT
+        // initiale serveur
+        // nom base en minuscule
+        // 
+        $GM_base = str_replace("_".strtolower($c::TB_NAME), "", $c);
+        $bases = explode("_", $GM_base);
+        unset($bases[0]);
+        unset($bases[1]);
+        $nom_base = join('_', $bases);
+
+        switch ($nom_base) {
+            case "Nom_base_donnee":
+                $base = GM_database::getDbNom_base_donnee();
+                break;
+            case "Nom_base_donnee":
+                $base = GM_database::getDbNom_base_donnee();
+                break;
+            default:
+                $base = NULL;
+                break;
+        }
+        
+//        echo "<pre>";
+//        print_r($base);
+//        echo "</pre>";
+
+        return $base;
+	}
 	
 	public function __get($property)
 	{
