@@ -8,7 +8,7 @@ abstract class GM_CONSTANTES
 	// Constantes de connexion DataBase
 	const DB_IP = '127.0.0.1';
 	const DB_PORT  = '8889';  
-	const DB_OBJECTIVE  = 'ObjectivePrime'; 
+	const DB_OBJECTIVE  = 'ObjectivPrime'; 
 	const DB_LOGIN  = 'root';  
 	const DB_PWD  = 'root';  
 
