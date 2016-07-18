@@ -25,11 +25,5 @@ $Connect ['Port'] =  GM_CONSTANTES::DB_PORT .PHP_EOL;
 $Connect ['DataBase'] =  GM_CONSTANTES::DB_OBJECTIVE .PHP_EOL;
 $Connect ['Login'] = GM_CONSTANTES::DB_LOGIN .PHP_EOL;
 $Connect ['Password'] =  GM_CONSTANTES::DB_PWD ;
-<<<<<<< HEAD
 
-
-=======
- 
-    
->>>>>>> DEV
 ?>
